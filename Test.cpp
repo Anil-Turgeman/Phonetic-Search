@@ -1,6 +1,6 @@
 /**
  * unit test for Phonetic Finder task
- * AUTHORS: Anil Turgeman Matan ????
+ * AUTHORS: Anil Turgeman Matan Tsabari
  * 
  * */
 
