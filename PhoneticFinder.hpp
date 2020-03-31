@@ -18,7 +18,7 @@ namespace phonetic
     std::string matchingWordInText(std::string text, std::string word);
     bool moreThanOneWord(std::string word);
     bool spacesOnlyWord(std::string word);
-    bool validWord(std::string word);
+    bool validWord(std::string text,std::string word);
     std::string removeUnessarySpaces(std::string word);
     std::string find(std::string text, std::string word);
 
