@@ -198,7 +198,7 @@ namespace phonetic
         return spaceOnly;
     }
  //check word the program recieved from user as input is valid according to chore instructions.   
-    bool validWord(std::string word)
+    bool validWord(std::string text,std::string word)
     {
         try
         {
@@ -241,7 +241,7 @@ namespace phonetic
         text+=' ';
         try
         {
-            if (phonetic::validWord(word))
+            if (phonetic::validWord(text,word))
             {
                 word = phonetic::removeUnessarySpaces(word);
                 return phonetic::matchingWordInText(text,word);
@@ -250,6 +250,7 @@ namespace phonetic
         catch (std::exception &e)
         {
             std::cerr <<"Error Occurred: "<<e.what() << '\n';
+            throw e;
         }
         return "";
     }
